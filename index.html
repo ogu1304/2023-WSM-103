@@ -1,40 +1,64 @@
-<!우리가 사용하는 HTML 코드의 버전(HTML5)>
+<!--우리가 사용하는 HTML 코드의 버전(HTML5)-->
 
 <!DOCTYPE html>
 <html>
 
-<!태그는 기본적으로 여는 태그와 닫는 태그가 있다.
+<!-- 태그는 기본적으로 여는 태그와 닫는 태그가 있다.
 ex
-    여는 태그 : <!/html>
-<!홈페이지를 설정>
+    여는 태그 : <!/html> -->
+<!-- 홈페이지를 설정-->
 <head>
 <!한국어 지원>
     <meta charset="UTF-8">
     <title>나를 소개합니다</title>
+    <!-- 여기에 별 붙이면 전체 선택 --> 
+    <style>
+        h1{
+            color:rgb(255, 94, 207);
+            /* 글자색을 파란색으로
+            속성명과 속성값 사이에는 콜론(:)으로
+            */
+        }
+        #hobby{
+            color:rgb(159, 54, 145);
+        }
+        #favorite{
+            color:rgb(159, 54, 145);
+        }
+        .hobby{
+            color:rgb(213, 9, 186);
+        }
+        .food{
+            color:rgb(213, 9, 186);
+        }
+
+    </style>
 </head>
-<!실제 홈페이지 내용이 들어가는 태그>
+<!-- 실제 홈페이지 내용이 들어가는 태그 -->
 <body>
     <h1>내 소개</h1>
     <img src="photo.jpg" alt="그림 불러오기 실패">
-    <h2>취미</h2>
-    <ul>
+    
+    <ul id="hobby1">
+        <h2 id="hobby">취미</h2>
+        <li class = "hobby">코딩</li>
+        <li class = "hobby">공부</li>
+        <li class = "hobby">독서</li>
+        <li class = "hobby">청소</li>
+        </ul>
 
-        <li>코딩</li>
-        <li>공부</li>
-        <li>독서</li>
-        <li>청소</li>
+    <ol id="favorite1">
+        <h2 id="favorite">좋아하는 음식 순위</h2>
+        <li class = "food">마라탕</li>
+        <li class = "food">꿔바로우</li>
+        <li class = "food">삼겹살</li>
+        </ol>
 
-        <h2>좋아하는 음식 순위</h2>
-        <li>마라탕</li>
-        <li>꿔바로우</li>
-        <li>삼겹살</li>
-    </ol>
-
-    <!-- 행<tr>을 먼저 ㅓ만들고 열<th>,<td>을 만든다.-->
+    <!-- 행<tr>을 먼저 만들고 열<th>,<td>을 만든다.-->
     <table>
         <tr>
             <!-- <th> 본문을 설명해주는 셀 -->
-`           <th>이름</th>
+            <th>이름</th>
             <th>주소</th>
             <th>종류</th>
         </tr>
@@ -61,9 +85,9 @@ ex
         <h2>내가 자주 가는 사이트</h2>
         <ul>
             <li><a href="https://www.naver.com" target=""_blank">네이버</a></li>
-            <li>네이버</li>
-            <li>나무위키</li>
-            <li>깃허브</li>
+            <li><a href="https://namu.wiki" target=""_blank">나무위키</a></li>
+            <li><a href="https://github.com/" target=""_blank">깃허브</a></li>
+            <li><a href="https://www.daum.net" target=""_blank">다음</a></li>
         </ul>
 
     </ul>
