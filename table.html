@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>테이블</title>
+    <style>
+        table {
+            /* 테두리 공유(상쇄) */
+            border-collapse: collapse;
+            /* 수평적으로 가운데 맞춤 */
+            margin: auto;
+        }
+        td, th {
+            border: 1px solid palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <table>
+    <tr>
+        <th>트랙</th>
+        <th>곡명</th>
+        <th>작사</th>
+        <th>작곡</th>
+        <th>편곡</th>
+    </tr>
+    <tr>
+        <td>02</td>
+        <td>Super Shy</td>
+        <td>다니엘</td>
+        <td colspan="2">Frankie Scoca</td>
+    </tr>
+    <tr>
+        <td>03</td>
+        <td>ETA</td>
+        <td>빈지노</td>
+        <td colspan="2" rowspan="2">250</td>
+    </tr>
+    <tr>
+        <td>05</td>
+        <td>Get Up</td>
+        <td>freekind</td>
+    </tr>
+</table>
+</body>
+
+</html>
